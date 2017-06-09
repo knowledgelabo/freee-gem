@@ -1,6 +1,14 @@
 require 'active_support/inflector'
 
 module Freee::Response
+
+  class Csv
+    attr_accessor :val
+    def initialize(val)
+       @val = val
+    end
+  end
+
   class Base
     attr_reader :val
 
